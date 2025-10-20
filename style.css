@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Canela;
+  src: url("./assets/CanelaText-Thin-Trial.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Talero;
+  src: url("./assets/TALERO\ v1.otf") format("opentype");
+}
+
+:root {
+  --header-in-animation: 2s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-typing {
+  animation:
+    typing var(--header-in-animation) steps(35, end),
+    blink var(--header-in-animation) step-end;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: calc(
+    var(--header-in-animation) - 0.5s
+  ); /* starts after typing ends */
+}
+
+.animate-fade-in-later {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: calc(
+    var(--header-in-animation)
+  ); /* 1s after the line above */
+}

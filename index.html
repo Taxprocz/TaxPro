@@ -1,0 +1,583 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TaxPro Účetnictví</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body
+    bgcolor="#EAE8E6 "
+    style="width: 100%"
+    class="bg-stone-200 text-wrap font-mono"
+  >
+    <!-- Navbar  -->
+    <div
+      class="fixed top-0 left-24 w-max h-8 p-2 backdrop-blur-md text-neutral-800 text-lg rounded-lg opacity-0 animate-fade-in-delay"
+    >
+      <a
+        href="/"
+        class="mr-4 hover:text-green-700 hover:cursor-pointer transition-all duration-300"
+        >Domů</a
+      >
+      <a
+        href="/#kontakt"
+        class="hover:text-green-700 hover:cursor-pointer transition-all duration-300"
+        >Kontakt</a
+      >
+    </div>
+
+    <!-- First-view -->
+    <div
+      class="w-screen h-screen flex flex-col items-center justify-center text-center overflow-hidden"
+    >
+      <p class="text-stone-500 mb-2">Logo tady</p>
+
+      <h1
+        class="text-green-700 text-7xl font-[Canela] font-bold whitespace-nowrap overflow-hidden border-r-4 border-green-700 animate-typing text-wrap"
+      >
+        Lorem ipsum dolor dolor lorem ipsum
+      </h1>
+
+      <p class="text-stone-800 opacity-0 animate-fade-in-delay">
+        <span class="text-green-600 text-xl">✓</span> Člen komory daňových
+        poradců <span class="text-green-600 text-xl">✓</span> Rodinná tradice -
+        zkušený tým <span class="text-green-600 text-xl">✓</span> Odborné
+        znalosti, pravidelné školení, individuální přístup
+      </p>
+
+      <p
+        class="text-stone-400 font-bold text-5xl opacity-0 animate-fade-in-later"
+      >
+        ⇣
+      </p>
+    </div>
+
+    <!-- Services -->
+    <div id="sluzby" class="flex flex-col border-stone-100 pb-16">
+      <h1 class="text-green-700 font-bold text-4xl self-center">Naše služby</h1>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:px-16 md:py-8 px-8 py-4"
+      >
+        <!-- Item 1 -->
+        <div
+          class="flex flex-col text-center hover:bg-neutral-300 rounded-lg duration-500 transition-all p-4"
+        >
+          <svg
+            width="5rem"
+            height="5rem"
+            viewBox="0 0 1024 1024"
+            class="icon self-center"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M553.89 875.24c0.15-0.02 0.29-0.05 0.44-0.07l-0.19-0.19-0.25 0.26z"
+              fill="#000"
+            />
+            <path
+              d="M801.15 109.42v72.95h37.76v109.42H182.38V182.37h36.12v-72.95H109.43v838.9h474.16v-72.95H182.38V364.74h729.48V109.42z"
+              fill="#000"
+            />
+            <path
+              d="M364.75 109.42h291.74v72.95H364.75zM255.33 72.95h72.95v145.9h-72.95zM693.01 72.95h72.95v145.9h-72.95zM620.06 583.58v364.74h291.79V583.58l-145.9-182.37-145.89 182.37z m198.04-0.41H713.8l52.15-65.19 52.15 65.19zM693 875.37V656.12h145.9v219.25H693zM218.5 437.31h364.74v72.95H218.5zM218.83 583.55h254.34v72.95H218.83zM218.83 729.79h255.35v72.95H218.83z"
+              fill="#000"
+            />
+          </svg>
+
+          <h1 class="text-lg text-neutral-800 font-bold mt-2">
+            Účetnictví a daňová evidence
+          </h1>
+
+          <ul class="list-disc list-inside text-neutral-500 text-left mt-2">
+            <li>
+              Kompletní vedení účetnictví pro firmy a neziskové organizace
+            </li>
+            <li>Vedení daňové evidence pro OSVČ a malé podnikatele</li>
+            <li>Příprava účetních závěrek, měsíčních a ročních uzávěrek</li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col text-center hover:bg-neutral-300 rounded-lg duration-500 transition-all p-4"
+        >
+          <svg
+            width="5rem"
+            height="5rem"
+            viewBox="0 0 1024 1024"
+            class="icon self-center"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M553.89 875.24c0.15-0.02 0.29-0.05 0.44-0.07l-0.19-0.19-0.25 0.26z"
+              fill="#000"
+            />
+            <path
+              d="M801.15 109.42v72.95h37.76v109.42H182.38V182.37h36.12v-72.95H109.43v838.9h474.16v-72.95H182.38V364.74h729.48V109.42z"
+              fill="#000"
+            />
+            <path
+              d="M364.75 109.42h291.74v72.95H364.75zM255.33 72.95h72.95v145.9h-72.95zM693.01 72.95h72.95v145.9h-72.95zM620.06 583.58v364.74h291.79V583.58l-145.9-182.37-145.89 182.37z m198.04-0.41H713.8l52.15-65.19 52.15 65.19zM693 875.37V656.12h145.9v219.25H693zM218.5 437.31h364.74v72.95H218.5zM218.83 583.55h254.34v72.95H218.83zM218.83 729.79h255.35v72.95H218.83z"
+              fill="#000"
+            />
+          </svg>
+
+          <h1 class="text-lg text-neutral-800 font-bold mt-2">Mzdová agenda</h1>
+
+          <ul class="list-disc list-inside text-neutral-500 text-left mt-2">
+            <li>Zpracování mezd pro zaměstnance</li>
+            <li>Přehledy pro zdravotní pojišťovny a ČSSZ</li>
+            <li>Roční zúčtování daně z příjmů zaměstnanců</li>
+            <li>Přihlášky a odhlášky zaměstnanců</li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col text-center hover:bg-neutral-300 rounded-lg duration-500 transition-all p-4"
+        >
+          <svg
+            width="5rem"
+            height="5rem"
+            viewBox="0 0 1024 1024"
+            class="icon self-center"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M553.89 875.24c0.15-0.02 0.29-0.05 0.44-0.07l-0.19-0.19-0.25 0.26z"
+              fill="#000"
+            />
+            <path
+              d="M801.15 109.42v72.95h37.76v109.42H182.38V182.37h36.12v-72.95H109.43v838.9h474.16v-72.95H182.38V364.74h729.48V109.42z"
+              fill="#000"
+            />
+            <path
+              d="M364.75 109.42h291.74v72.95H364.75zM255.33 72.95h72.95v145.9h-72.95zM693.01 72.95h72.95v145.9h-72.95zM620.06 583.58v364.74h291.79V583.58l-145.9-182.37-145.89 182.37z m198.04-0.41H713.8l52.15-65.19 52.15 65.19zM693 875.37V656.12h145.9v219.25H693zM218.5 437.31h364.74v72.95H218.5zM218.83 583.55h254.34v72.95H218.83zM218.83 729.79h255.35v72.95H218.83z"
+              fill="#000"
+            />
+          </svg>
+
+          <h1 class="text-lg text-neutral-800 font-bold mt-2">
+            Daňové poradenství
+          </h1>
+
+          <ul class="list-disc list-inside text-neutral-500 text-left mt-2">
+            <li>Optimalizace daňových povinností</li>
+            <li>Zastupování před finančním úřadem</li>
+            <li>Odpovědi na daňové dotazy a konzultace</li>
+            <li>Sledování legislativních změn</li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col text-center hover:bg-neutral-300 rounded-lg duration-500 transition-all p-4"
+        >
+          <svg
+            width="5rem"
+            height="5rem"
+            viewBox="0 0 1024 1024"
+            class="icon self-center"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M553.89 875.24c0.15-0.02 0.29-0.05 0.44-0.07l-0.19-0.19-0.25 0.26z"
+              fill="#000"
+            />
+            <path
+              d="M801.15 109.42v72.95h37.76v109.42H182.38V182.37h36.12v-72.95H109.43v838.9h474.16v-72.95H182.38V364.74h729.48V109.42z"
+              fill="#000"
+            />
+            <path
+              d="M364.75 109.42h291.74v72.95H364.75zM255.33 72.95h72.95v145.9h-72.95zM693.01 72.95h72.95v145.9h-72.95zM620.06 583.58v364.74h291.79V583.58l-145.9-182.37-145.89 182.37z m198.04-0.41H713.8l52.15-65.19 52.15 65.19zM693 875.37V656.12h145.9v219.25H693zM218.5 437.31h364.74v72.95H218.5zM218.83 583.55h254.34v72.95H218.83zM218.83 729.79h255.35v72.95H218.83z"
+              fill="#000"
+            />
+          </svg>
+
+          <h1 class="text-lg text-neutral-800 font-bold mt-2">
+            Zpracování daňových přiznání
+          </h1>
+
+          <ul class="list-disc list-inside text-neutral-500 text-left mt-2">
+            <li>Daň z příjmů fyzických a právnických osob</li>
+            <li>Daň z přidané hodnoty (DPH)</li>
+            <li>Silniční daň, daň z nemovitých věcí</li>
+            <li>Přiznání k ostatním daním podle potřeb klienta</li>
+          </ul>
+        </div>
+
+        <!-- Copy 3 more of the above divs -->
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div
+      class="h-128 bg-stone-300 flex flex-col border-t border-dashed border-stone-700"
+    >
+      <!-- Inline section -->
+      <div class="flex gap-0 items-start">
+        <h1
+          class="text-green-700 text-2xl font-mono font-bold pl-8 pt-8 flex-1"
+        >
+          Lorem ipsum dolor dolor lorem ipsum
+        </h1>
+        <!--<img
+          src="./assets/index_header.jpg"
+          alt="Header image"
+          class="max-w-1/2 h-auto object-contain flex-shrink-0"
+/> -->
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="kontakt" class="flex h-128">
+      <div class="flex gap-4 w-screen px-32 py-4">
+        <!-- Ways of contact -->
+        <div class="flex flex-col gap-4">
+          <!-- Phone  -->
+          <div class="flex flex-col bg-lime-500 rounded-3xl w-96 h-58 p-4">
+            <div class="flex items-center gap-2">
+              <!-- Rounded container for SVG -->
+              <div class="bg-lime-100 p-2 rounded-2xl">
+                <svg
+                  width="2rem"
+                  height="2rem"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.13641 12.764L8.15456 9.08664C8.46255 8.69065 8.61655 8.49264 8.69726 8.27058C8.76867 8.07409 8.79821 7.86484 8.784 7.65625C8.76793 7.42053 8.67477 7.18763 8.48846 6.72184L7.77776 4.9451C7.50204 4.25579 7.36417 3.91113 7.12635 3.68522C6.91678 3.48615 6.65417 3.35188 6.37009 3.29854C6.0477 3.238 5.68758 3.32804 4.96733 3.5081L3 4C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3121 20.7617 17.952 20.7012 17.6296C20.6478 17.3456 20.5136 17.0829 20.3145 16.8734C20.0886 16.6355 19.7439 16.4977 19.0546 16.222L17.4691 15.5877C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4001C15.4877 15.512 15.2854 15.7143 14.8807 16.119L11.8274 19.1733M12.9997 7C13.9765 7.19057 14.8741 7.66826 15.5778 8.37194C16.2815 9.07561 16.7592 9.97326 16.9497 10.95M12.9997 3C15.029 3.22544 16.9213 4.13417 18.366 5.57701C19.8106 7.01984 20.7217 8.91101 20.9497 10.94"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h1 class="text-white text-xl font-semibold font-sans ml-2">
+                Zavolejte nám
+              </h1>
+            </div>
+            <p class="text-white text-3xl font-semibold mt-8 mx-auto">
+              +420-123-456-789
+            </p>
+
+            <a
+              href="tel:+420123456789"
+              class="bg-lime-200 rounded-full p-2 text-center mt-10 cursor-pointer hover:bg-lime-100 duration-500 transition-all"
+              >Kontaktuje nás</a
+            >
+          </div>
+
+          <!-- Email  -->
+          <div class="flex flex-col bg-stone-400 rounded-3xl w-96 h-58 p-4">
+            <div class="flex items-center gap-2">
+              <!-- Rounded container for SVG -->
+              <div class="bg-stone-200 p-2 rounded-2xl">
+                <svg
+                  width="2rem"
+                  height="2rem"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.4606 1.25H13.5394C15.1427 1.24999 16.3997 1.24999 17.4039 1.34547C18.4274 1.44279 19.2655 1.64457 20.0044 2.09732C20.7781 2.57144 21.4286 3.22194 21.9027 3.99563C22.3554 4.73445 22.5572 5.57256 22.6545 6.59611C22.75 7.60029 22.75 8.85725 22.75 10.4606V11.5278C22.75 12.6691 22.75 13.564 22.7007 14.2868C22.6505 15.0223 22.5468 15.6344 22.3123 16.2004C21.7287 17.6093 20.6093 18.7287 19.2004 19.3123C18.3955 19.6457 17.4786 19.7197 16.2233 19.7413C15.7842 19.7489 15.5061 19.7545 15.2941 19.7779C15.096 19.7999 15.0192 19.832 14.9742 19.8582C14.9268 19.8857 14.8622 19.936 14.7501 20.0898C14.6287 20.2564 14.4916 20.4865 14.2742 20.8539L13.7321 21.7697C12.9585 23.0767 11.0415 23.0767 10.2679 21.7697L9.72579 20.8539C9.50835 20.4865 9.37122 20.2564 9.24985 20.0898C9.13772 19.936 9.07313 19.8857 9.02572 19.8582C8.98078 19.832 8.90399 19.7999 8.70588 19.7779C8.49387 19.7545 8.21575 19.7489 7.77666 19.7413C6.52138 19.7197 5.60454 19.6457 4.79957 19.3123C3.39066 18.7287 2.27128 17.6093 1.68769 16.2004C1.45323 15.6344 1.3495 15.0223 1.29932 14.2868C1.24999 13.564 1.25 12.6691 1.25 11.5278L1.25 10.4606C1.24999 8.85726 1.24999 7.60029 1.34547 6.59611C1.44279 5.57256 1.64457 4.73445 2.09732 3.99563C2.57144 3.22194 3.22194 2.57144 3.99563 2.09732C4.73445 1.64457 5.57256 1.44279 6.59611 1.34547C7.60029 1.24999 8.85726 1.24999 10.4606 1.25ZM6.73809 2.83873C5.82434 2.92561 5.24291 3.09223 4.77938 3.37628C4.20752 3.72672 3.72672 4.20752 3.37628 4.77938C3.09223 5.24291 2.92561 5.82434 2.83873 6.73809C2.75079 7.663 2.75 8.84876 2.75 10.5V11.5C2.75 12.6751 2.75041 13.5189 2.79584 14.1847C2.84081 14.8438 2.92737 15.2736 3.07351 15.6264C3.50486 16.6678 4.33223 17.4951 5.3736 17.9265C5.88923 18.1401 6.54706 18.2199 7.8025 18.2416L7.83432 18.2421C8.23232 18.249 8.58109 18.2549 8.87097 18.287C9.18246 18.3215 9.4871 18.3912 9.77986 18.5615C10.0702 18.7304 10.2795 18.9559 10.4621 19.2063C10.6307 19.4378 10.804 19.7306 11.0004 20.0623L11.5587 21.0057C11.7515 21.3313 12.2485 21.3313 12.4412 21.0057L12.9996 20.0623C13.1959 19.7306 13.3692 19.4378 13.5379 19.2063C13.7204 18.9559 13.9298 18.7304 14.2201 18.5615C14.5129 18.3912 14.8175 18.3215 15.129 18.287C15.4189 18.2549 15.7676 18.249 16.1656 18.2421L16.1975 18.2416C17.4529 18.2199 18.1108 18.1401 18.6264 17.9265C19.6678 17.4951 20.4951 16.6678 20.9265 15.6264C21.0726 15.2736 21.1592 14.8438 21.2042 14.1847C21.2496 13.5189 21.25 12.6751 21.25 11.5V10.5C21.25 8.84876 21.2492 7.663 21.1613 6.73809C21.0744 5.82434 20.9078 5.24291 20.6237 4.77938C20.2733 4.20752 19.7925 3.72672 19.2206 3.37628C18.7571 3.09223 18.1757 2.92561 17.2619 2.83873C16.337 2.75079 15.1512 2.75 13.5 2.75H10.5C8.84876 2.75 7.663 2.75079 6.73809 2.83873Z"
+                    fill="#1C274C"
+                  />
+                  <path
+                    d="M9 11C9 11.5523 8.55228 12 8 12C7.44772 12 7 11.5523 7 11C7 10.4477 7.44772 10 8 10C8.55228 10 9 10.4477 9 11Z"
+                    fill="#1C274C"
+                  />
+                  <path
+                    d="M13 11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11C11 10.4477 11.4477 10 12 10C12.5523 10 13 10.4477 13 11Z"
+                    fill="#1C274C"
+                  />
+                  <path
+                    d="M17 11C17 11.5523 16.5523 12 16 12C15.4477 12 15 11.5523 15 11C15 10.4477 15.4477 10 16 10C16.5523 10 17 10.4477 17 11Z"
+                    fill="#1C274C"
+                  />
+                </svg>
+              </div>
+              <h1 class="text-white text-xl font-semibold font-sans ml-2">
+                Napište nám
+              </h1>
+            </div>
+            <p class="text-white text-3xl font-semibold mt-8 mx-auto">
+              example@example.com
+            </p>
+
+            <a
+              href="email:example@example.com"
+              class="bg-stone-200 rounded-full p-2 text-center mt-10 cursor-pointer hover:bg-stone-100 duration-500 transition-all"
+              >Kontaktuje nás</a
+            >
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div
+          class="flex flex-col gap-6 w-full p-4 border border-stone-500 rounded-3xl"
+        >
+          <!-- Name -->
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                width="1.5rem"
+                height="1.5rem"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <!-- Input Field -->
+            <input
+              type="text"
+              placeholder="Jméno a příjmení / název firmy"
+              class="w-full border border-stone-500 bg-transparent text-black placeholder:text-black rounded-full pl-12 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
+              required
+            />
+          </div>
+
+          <!-- ICO -->
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                width="1.5rem"
+                height="1.5rem"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 16C14.7164 14.8589 13.481 14 12 14C10.519 14 9.28364 14.8589 9 16M11 3H13M12 10H12.01M8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.0799 3 8.2V16.8C3 17.9201 3 18.4802 3.21799 18.908C3.40973 19.2843 3.71569 19.5903 4.09202 19.782C4.51984 20 5.0799 20 6.2 20H17.8C18.9201 20 19.4802 20 19.908 19.782C20.2843 19.5903 20.5903 19.2843 20.782 18.908C21 18.4802 21 17.9201 21 16.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H16M13 10C13 10.5523 12.5523 11 12 11C11.4477 11 11 10.5523 11 10C11 9.44772 11.4477 9 12 9C12.5523 9 13 9.44772 13 10Z"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <!-- Input Field -->
+            <input
+              type="number"
+              placeholder="IČO (pokud máte)"
+              class="w-full border border-stone-500 bg-transparent text-black placeholder:text-black rounded-full pl-12 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
+            />
+          </div>
+
+          <!-- Phone & Email -->
+          <div class="flex gap-2">
+            <!-- Phone -->
+            <div class="relative w-1/3">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  width="1.5rem"
+                  height="1.5rem"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.13641 12.764L8.15456 9.08664C8.46255 8.69065 8.61655 8.49264 8.69726 8.27058C8.76867 8.07409 8.79821 7.86484 8.784 7.65625C8.76793 7.42053 8.67477 7.18763 8.48846 6.72184L7.77776 4.9451C7.50204 4.25579 7.36417 3.91113 7.12635 3.68522C6.91678 3.48615 6.65417 3.35188 6.37009 3.29854C6.0477 3.238 5.68758 3.32804 4.96733 3.5081L3 4C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3121 20.7617 17.952 20.7012 17.6296C20.6478 17.3456 20.5136 17.0829 20.3145 16.8734C20.0886 16.6355 19.7439 16.4977 19.0546 16.222L17.4691 15.5877C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4001C15.4877 15.512 15.2854 15.7143 14.8807 16.119L11.8274 19.1733M12.9997 7C13.9765 7.19057 14.8741 7.66826 15.5778 8.37194C16.2815 9.07561 16.7592 9.97326 16.9497 10.95M12.9997 3C15.029 3.22544 16.9213 4.13417 18.366 5.57701C19.8106 7.01984 20.7217 8.91101 20.9497 10.94"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+
+              <!-- Input Field -->
+              <input
+                type="number"
+                placeholder="Telefonní číslo"
+                class="w-full border border-stone-500 bg-transparent text-black placeholder:text-black rounded-full pl-12 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="relative w-2/3">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  width="1.5rem"
+                  height="1.5rem"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.4009 19.2C15.8965 20.3302 14.0265 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V13.5C21 14.8807 19.8807 16 18.5 16C17.1193 16 16 14.8807 16 13.5V8M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+
+              <!-- Input Field -->
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="w-full border border-stone-500 bg-transparent text-black placeholder:text-black rounded-full pl-12 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
+              />
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="relative w-full h-full">
+            <!-- Textarea Field -->
+            <textarea
+              placeholder="Krátky popis požadované služby"
+              class="w-full h-full border border-stone-500 bg-transparent text-black placeholder:text-black rounded-3xl pl-4 pr-4 py-4 resize-none focus:outline-none focus:ring-2 focus:ring-lime-500"
+            ></textarea>
+          </div>
+
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                width="1.5rem"
+                height="1.5rem"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.4009 19.2C15.8965 20.3302 14.0265 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V13.5C21 14.8807 19.8807 16 18.5 16C17.1193 16 16 14.8807 16 13.5V8M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <!-- Input Field -->
+            <input
+              type="submit"
+              value="Odeslat"
+              class="w-full border border-stone-500 bg-stone-300 text-black rounded-full pl-12 pr-3 py-2 hover:bg-stone-500 hover:text-white duration-500 transition-all"
+            />
+          </div>
+        </div>
+
+        <!-- Pricing -->
+        <div class="flex flex-col w-240 p-4 bg-blue-300 rounded-3xl">
+          <div class="flex items-center gap-2">
+            <div class="bg-blue-100 p-2 rounded-2xl">
+              <svg
+                width="2rem"
+                height="2rem"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 8.5V8.35417C18 6.50171 16.4983 5 14.6458 5H9.5C7.567 5 6 6.567 6 8.5C6 10.433 7.567 12 9.5 12H14.5C16.433 12 18 13.567 18 15.5C18 17.433 16.433 19 14.5 19H9.42708C7.53436 19 6 17.4656 6 15.5729V15.5M12 3V21"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h1
+              class="text-white text-xl font-semibold font-sans ml-2 self-center"
+            >
+              Ceník
+            </h1>
+          </div>
+
+          <p class="text-black pt-2">
+            Cena se vždy odvýjí od konkrétních potřeb klienta - množství
+            dokladů, rozsahu služeb a frekvence zpracování
+          </p>
+
+          <div class="bg-blue-400 rounded-2xl w-full h-full p-4 mt-4">
+            <table class="w-full text-left text-black">
+              <tbody>
+                <tr
+                  class="border-b border-blue-300 hover:bg-blue-300/20 transition"
+                >
+                  <td class="py-3">Vedení daňové evidence</td>
+                  <td class="font-bold text-blue-900 underline">
+                    od 5-000,-Kč
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-blue-300 hover:bg-blue-300/20 transition"
+                >
+                  <td class="py-3">Vedení účetnictví</td>
+                  <td class="font-bold text-blue-900 underline">
+                    od 5-000,-Kč
+                  </td>
+                </tr>
+                <tr
+                  class="border-b border-blue-300 hover:bg-blue-300/20 transition"
+                >
+                  <td class="py-3">Daňové poradenství</td>
+                  <td class="font-bold text-blue-900 underline">
+                    od 5-000,-Kč
+                  </td>
+                </tr>
+                <tr class="hover:bg-blue-300/20 transition">
+                  <td class="py-3">Zpracování daňového přiznání</td>
+                  <td class="font-bold text-blue-900 underline">
+                    od 5-000,-Kč
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <div
+      class="w-screen flex flex-col flex-wrap items-center text-center bg-stone-300 p-8"
+    >
+      <div>
+        <p>Rychlé odkazy:</p>
+        <a
+          class="underline hover:text-green-600 duration-500 transition-all text-green-800 cursor-pointer"
+          href="#sluzby"
+          >Naše služby</a
+        >
+        <a
+          class="underline hover:text-green-600 duration-500 transition-all text-green-800 cursor-pointer"
+          href="#sluzby"
+          >Ceník</a
+        >
+        <a
+          class="underline hover:text-green-600 duration-500 transition-all text-green-800 cursor-pointer"
+          href="#sluzby"
+          >Kontakt</a
+        >
+      </div>
+
+      <p>&copy; 2025 Taxpro s.r.o. - Všechna práva vyhrazena</p>
+    </div>
+  </body>
+</html>
