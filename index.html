@@ -4,30 +4,23 @@
     <title>TaxPro Účetnictví</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand: oklch(40.08% 0.057 180.01);
+        --color-brand-100: oklch(95% 0.05 140);
+        --color-brand-200: oklch(85% 0.08 140);
+        --color-brand-300: oklch(75% 0.1 140);
+        --color-brand-400: oklch(65% 0.11 140);
+      }
+    </style>
   </head>
   <body
     bgcolor="#EAE8E6 "
     style="width: 100%"
     class="bg-stone-200 text-wrap font-mono"
   >
-    <!-- Navbar  -->
-    <div
-      class="fixed top-0 left-24 w-max h-8 p-2 backdrop-blur-md text-neutral-800 text-lg rounded-lg opacity-0 animate-fade-in-delay"
-    >
-      <a
-        href="/"
-        class="mr-4 hover:text-teal-600 hover:cursor-pointer transition-all duration-300"
-        >Domů</a
-      >
-      <a
-        href="/#kontakt"
-        class="hover:text-teal-600 hover:cursor-pointer transition-all duration-300"
-        >Kontakt</a
-      >
-    </div>
-
     <!-- First-view -->
     <div
       class="w-screen h-screen flex flex-col items-center justify-center text-center overflow-hidden px-4"
@@ -35,29 +28,41 @@
       <img
         src="assets/logo.svg"
         title="TaxPro Logo"
-        class="w-3/4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto mb-8 transition-all duration-300"
+        class="w-3/4 max-w-xs min-w-sm sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto mb-8 transition-all duration-300 pb-32"
       />
 
-      <p
-        class="text-stone-800 opacity-0 animate-fade-in-delay -mt-8 sm:-mt-16 flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-base sm:text-lg max-w-3xl"
-      >
-        <span class="flex items-start gap-1 text-left">
-          <span class="text-teal-600 text-xl whitespace-nowrap">✓</span>
-          <span>Člen komory daňových poradců</span>
-        </span>
-
-        <span class="flex items-start gap-1 text-left">
-          <span class="text-teal-600 text-xl whitespace-nowrap">✓</span>
-          <span>Rodinná tradice – zkušený tým</span>
-        </span>
-
-        <span class="flex items-start gap-1 text-left">
-          <span class="text-teal-600 text-xl whitespace-nowrap">✓</span>
-          <span
-            >Odborné znalosti, pravidelné školení, individuální přístup</span
-          >
-        </span>
+      <p class="text-stone-700 -mt-46 sm:pl-8 sm:-mt-48 text-center mx-auto">
+        s jistotou od roku 1997
       </p>
+
+      <ul
+        class="text-stone-800 mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 text-base sm:text-lg max-w-3xl mx-auto"
+      >
+        <li class="flex items-start gap-2">
+          <span class="text-brand-300 text-2xl leading-none">✓</span>
+          <span>Člen Komory daňových poradců ČR od roku&nbsp;1997</span>
+        </li>
+
+        <li class="flex items-start gap-2">
+          <span class="text-brand-300 text-2xl leading-none">✓</span>
+          <span
+            >Rodinná tradice – zkušený tým účetních a&nbsp;daňového
+            poradce</span
+          >
+        </li>
+
+        <li class="flex items-start gap-2">
+          <span class="text-brand-300 text-2xl leading-none">✓</span>
+          <span
+            >Odborné znalosti, pravidelná školení, individuální přístup</span
+          >
+        </li>
+
+        <li class="flex items-start gap-2">
+          <span class="text-brand-300 text-2xl leading-none">✓</span>
+          <span>Účtujeme v programu POHODA</span>
+        </li>
+      </ul>
 
       <p
         class="text-stone-400 font-bold text-5xl opacity-0 animate-fade-in-later pt-4"
@@ -68,155 +73,103 @@
 
     <!-- Services -->
     <div id="sluzby" class="flex flex-col border-stone-100 pb-16">
-      <h1 class="text-teal-600 font-bold text-4xl self-center">Naše služby</h1>
+      <h1 class="text-brand font-bold text-4xl self-center">Naše služby</h1>
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:px-16 md:py-8 px-8 py-4"
+        class="flex flex-wrap justify-center gap-6 md:px-6 md:py-8 px-4 py-4"
       >
-        <!-- Item 1 -->
         <div
-          class="flex flex-col text-center hover:shadow-lg hover:shadow-neutral-400 hover:bg-neutral-300 rounded-lg duration-500 transition-all p-4"
+          class="flex flex-col flex-1 min-w-[250px] max-w-sm text-center bg-white rounded-lg p-4 hover:shadow-lg hover:shadow-neutral-400 transition-all duration-500"
         >
-          <svg
-            width="5rem"
-            height="5rem"
-            viewBox="0 0 1024 1024"
-            class="icon self-center"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M553.89 875.24c0.15-0.02 0.29-0.05 0.44-0.07l-0.19-0.19-0.25 0.26z"
-              fill="#000"
-            />
-            <path
-              d="M801.15 109.42v72.95h37.76v109.42H182.38V182.37h36.12v-72.95H109.43v838.9h474.16v-72.95H182.38V364.74h729.48V109.42z"
-              fill="#000"
-            />
-            <path
-              d="M364.75 109.42h291.74v72.95H364.75zM255.33 72.95h72.95v145.9h-72.95zM693.01 72.95h72.95v145.9h-72.95zM620.06 583.58v364.74h291.79V583.58l-145.9-182.37-145.89 182.37z m198.04-0.41H713.8l52.15-65.19 52.15 65.19zM693 875.37V656.12h145.9v219.25H693zM218.5 437.31h364.74v72.95H218.5zM218.83 583.55h254.34v72.95H218.83zM218.83 729.79h255.35v72.95H218.83z"
-              fill="#000"
-            />
-          </svg>
+          <img
+            src="assets/ucetnictvi.jpg"
+            alt="Účetnictví a daňové evidence"
+            class="max-h-1/3 w-auto object-contain"
+          />
 
-          <h1 class="text-lg text-neutral-800 font-bold mt-2">
-            Účetnictví a daňová evidence
+          <h1 class="text-xl text-neutral-800 font-bold mt-2">
+            Účetnictví a&nbsp;daňová evidence
           </h1>
 
-          <ul class="list-disc list-inside text-neutral-500 text-left mt-2">
+          <ul
+            class="list-disc list-outside text-neutral-500 text-left mt-6 mx-4 gap-1 flex flex-col"
+          >
+            <li>Kompletní vedení účetnictví pro firmy</li>
+            <li>Vedení daňové evidence pro OSVČ a&nbsp;malé podnikatele</li>
             <li>
-              Kompletní vedení účetnictví pro firmy a neziskové organizace
+              Příprava účetních závěrek, měsíčních a&nbsp;ročních uzávěrek
             </li>
-            <li>Vedení daňové evidence pro OSVČ a malé podnikatele</li>
-            <li>Příprava účetních závěrek, měsíčních a ročních uzávěrek</li>
           </ul>
         </div>
 
         <div
-          class="flex flex-col text-center hover:shadow-lg hover:shadow-neutral-400 hover:bg-neutral-300 rounded-lg duration-500 transition-all p-4"
+          class="flex flex-col flex-1 min-w-[250px] max-w-sm text-center bg-white rounded-lg p-4 hover:shadow-lg hover:shadow-neutral-400 transition-all duration-500"
         >
-          <svg
-            width="5rem"
-            height="5rem"
-            viewBox="0 0 1024 1024"
-            class="icon self-center"
-            xmlns="http://www.w3.org/2000/svg"
+          <img
+            src="assets/mzdy.jpg"
+            alt="Mzdová agenda"
+            class="max-h-1/3 w-auto object-contain"
+          />
+
+          <h1 class="text-xl text-neutral-800 font-bold mt-2">Mzdová agenda</h1>
+
+          <ul
+            class="list-disc list-outside text-neutral-500 text-left mt-6 mx-4 gap-1 flex flex-col"
           >
-            <path
-              d="M553.89 875.24c0.15-0.02 0.29-0.05 0.44-0.07l-0.19-0.19-0.25 0.26z"
-              fill="#000"
-            />
-            <path
-              d="M801.15 109.42v72.95h37.76v109.42H182.38V182.37h36.12v-72.95H109.43v838.9h474.16v-72.95H182.38V364.74h729.48V109.42z"
-              fill="#000"
-            />
-            <path
-              d="M364.75 109.42h291.74v72.95H364.75zM255.33 72.95h72.95v145.9h-72.95zM693.01 72.95h72.95v145.9h-72.95zM620.06 583.58v364.74h291.79V583.58l-145.9-182.37-145.89 182.37z m198.04-0.41H713.8l52.15-65.19 52.15 65.19zM693 875.37V656.12h145.9v219.25H693zM218.5 437.31h364.74v72.95H218.5zM218.83 583.55h254.34v72.95H218.83zM218.83 729.79h255.35v72.95H218.83z"
-              fill="#000"
-            />
-          </svg>
-
-          <h1 class="text-lg text-neutral-800 font-bold mt-2">Mzdová agenda</h1>
-
-          <ul class="list-disc list-inside text-neutral-500 text-left mt-2">
             <li>Zpracování mezd pro zaměstnance</li>
-            <li>Přehledy pro zdravotní pojišťovny a ČSSZ</li>
-            <li>Roční zúčtování daně z příjmů zaměstnanců</li>
-            <li>Přihlášky a odhlášky zaměstnanců</li>
+            <li>Přehledy pro zdravotní pojišťovny a&nbsp;ČSSZ</li>
+            <li>Roční zúčtování daně z&nbsp;příjmů zaměstnanců</li>
+            <li>Přihlášky a&nbsp;odhlášky zaměstnanců</li>
           </ul>
         </div>
 
         <div
-          class="flex flex-col text-center hover:shadow-lg hover:shadow-neutral-400 hover:bg-neutral-300 rounded-lg duration-500 transition-all p-4"
+          class="flex flex-col flex-1 min-w-[250px] max-w-sm text-center bg-white rounded-lg p-4 hover:shadow-lg hover:shadow-neutral-400 transition-all duration-500"
         >
-          <svg
-            width="5rem"
-            height="5rem"
-            viewBox="0 0 1024 1024"
-            class="icon self-center"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M553.89 875.24c0.15-0.02 0.29-0.05 0.44-0.07l-0.19-0.19-0.25 0.26z"
-              fill="#000"
-            />
-            <path
-              d="M801.15 109.42v72.95h37.76v109.42H182.38V182.37h36.12v-72.95H109.43v838.9h474.16v-72.95H182.38V364.74h729.48V109.42z"
-              fill="#000"
-            />
-            <path
-              d="M364.75 109.42h291.74v72.95H364.75zM255.33 72.95h72.95v145.9h-72.95zM693.01 72.95h72.95v145.9h-72.95zM620.06 583.58v364.74h291.79V583.58l-145.9-182.37-145.89 182.37z m198.04-0.41H713.8l52.15-65.19 52.15 65.19zM693 875.37V656.12h145.9v219.25H693zM218.5 437.31h364.74v72.95H218.5zM218.83 583.55h254.34v72.95H218.83zM218.83 729.79h255.35v72.95H218.83z"
-              fill="#000"
-            />
-          </svg>
+          <img
+            src="assets/danove_poradenstvi.jpg"
+            alt="Daňové poradenství"
+            class="max-h-1/3 w-auto object-contain"
+          />
 
-          <h1 class="text-lg text-neutral-800 font-bold mt-2">
+          <h1 class="text-xl text-neutral-800 font-bold mt-2">
             Daňové poradenství
           </h1>
 
-          <ul class="list-disc list-inside text-neutral-500 text-left mt-2">
+          <ul
+            class="list-disc list-outside text-neutral-500 text-left mt-6 mx-4 gap-1 flex flex-col"
+          >
             <li>Optimalizace daňových povinností</li>
             <li>Zastupování před finančním úřadem</li>
-            <li>Odpovědi na daňové dotazy a konzultace</li>
+            <li>Odpovědi na daňové dotazy a&nbsp;konzultace</li>
             <li>Sledování legislativních změn</li>
           </ul>
         </div>
 
         <div
-          class="flex flex-col text-center hover:shadow-lg hover:shadow-neutral-400 hover:bg-neutral-300 rounded-lg duration-500 transition-all p-4"
+          class="flex flex-col flex-1 min-w-[250px] max-w-sm text-center bg-white rounded-lg p-4 hover:shadow-lg hover:shadow-neutral-400 transition-all duration-500"
         >
-          <svg
-            width="5rem"
-            height="5rem"
-            viewBox="0 0 1024 1024"
-            class="icon self-center"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M553.89 875.24c0.15-0.02 0.29-0.05 0.44-0.07l-0.19-0.19-0.25 0.26z"
-              fill="#000"
-            />
-            <path
-              d="M801.15 109.42v72.95h37.76v109.42H182.38V182.37h36.12v-72.95H109.43v838.9h474.16v-72.95H182.38V364.74h729.48V109.42z"
-              fill="#000"
-            />
-            <path
-              d="M364.75 109.42h291.74v72.95H364.75zM255.33 72.95h72.95v145.9h-72.95zM693.01 72.95h72.95v145.9h-72.95zM620.06 583.58v364.74h291.79V583.58l-145.9-182.37-145.89 182.37z m198.04-0.41H713.8l52.15-65.19 52.15 65.19zM693 875.37V656.12h145.9v219.25H693zM218.5 437.31h364.74v72.95H218.5zM218.83 583.55h254.34v72.95H218.83zM218.83 729.79h255.35v72.95H218.83z"
-              fill="#000"
-            />
-          </svg>
+          <img
+            src="assets/dane.jpg"
+            alt="Zpracování daňových přiznání"
+            class="max-h-1/3 w-auto object-contain"
+          />
 
-          <h1 class="text-lg text-neutral-800 font-bold mt-2">
+          <h1 class="text-xl text-neutral-800 font-bold mt-2">
             Zpracování daňových přiznání
           </h1>
 
-          <ul class="list-disc list-inside text-neutral-500 text-left mt-2">
-            <li>Daň z příjmů fyzických a právnických osob</li>
-            <li>Daň z přidané hodnoty (DPH)</li>
-            <li>Silniční daň, daň z nemovitých věcí</li>
-            <li>Přiznání k ostatním daním podle potřeb klienta</li>
+          <ul
+            class="list-disc list-outside text-neutral-500 text-left mt-6 mx-4 gap-1 flex flex-col"
+          >
+            <li>Daň z&nbsp;příjmů fyzických a&nbsp;právnických osob</li>
+            <li>
+              Daň z&nbsp;přidané hodnoty (DPH, kontrolní hlášení, souhrnné
+              hlášení)
+            </li>
+            <li>Silniční daň, daň z&nbsp;nemovitých věcí</li>
+            <li>Přiznání k&nbsp;ostatním daním podle potřeb klienta</li>
           </ul>
         </div>
-
-        <!-- Copy 3 more of the above divs -->
       </div>
     </div>
 
@@ -224,16 +177,17 @@
 
     <div id="kontakt" class="flex flex-col h-max">
       <h1
-        class="text-3xl text-teal-600 mt-8 text-center font-bold px-6 md:px-16 lg:px-32"
+        class="text-3xl text-brand mt-8 text-center font-bold px-6 md:px-16 lg:px-32"
       >
         Chcete znát přesnou cenu?
       </h1>
       <p class="text-teal-900 text-center px-6 md:px-16 lg:px-32">
-        Vyplňte jednoduchý formulář a my se vám ozveme s nezávaznou nabídkou.
+        Vyplňte jednoduchý formulář a&nbsp;my se vám ozveme s&nbsp;nezávaznou
+        nabídkou.
       </p>
 
       <div
-        class="flex flex-col md:flex-row lg:flex-row flex-wrap xl:flex-nowrap gap-6 px-2 sm:px-6 md:px-16 py-4"
+        class="flex flex-col md:flex-row lg:flex-row flex-wrap xl:flex-nowrap gap-4 px-2 sm:px-6 md:px-4 py-4"
       >
         <!-- Contact options -->
         <div
@@ -241,10 +195,10 @@
         >
           <!-- Phone -->
           <div
-            class="flex flex-col bg-lime-500 rounded-3xl p-4 h-full md:h-full md:w-1/2 lg:w-full hover:shadow-md hover:shadow-lime-900 transition-all duration-500"
+            class="flex flex-col bg-brand rounded-3xl p-4 h-full md:h-full md:w-1/2 lg:w-full hover:shadow-md hover:shadow-lime-900 transition-all duration-500"
           >
             <div class="flex items-center gap-2">
-              <div class="bg-lime-100 p-2 rounded-2xl">
+              <div class="bg-brand-100 p-2 rounded-2xl">
                 <svg
                   width="2rem"
                   height="2rem"
@@ -266,11 +220,11 @@
               </h1>
             </div>
             <p class="text-white text-3xl font-semibold mt-8 mx-auto">
-              +420-123-456-789
+              +420-603-560-918
             </p>
             <a
-              href="tel:+420123456789"
-              class="bg-lime-200 rounded-full p-2 text-center mt-10 cursor-pointer hover:bg-lime-100 duration-500 transition-all"
+              href="tel:+420603560918"
+              class="bg-brand-200 rounded-full p-2 text-center mt-10 cursor-pointer hover:bg-brand-100 duration-500 transition-all"
               >Kontaktujte nás</a
             >
           </div>
@@ -299,12 +253,12 @@
               </h1>
             </div>
             <p
-              class="text-white lg:text-3xl xl:text-2xl font-semibold mt-8 mx-auto text-wrap"
+              class="text-white lg:text-3xl xl:text-2xl md:text-xl text-3xl font-semibold mt-8 mx-auto text-wrap"
             >
-              example@example.com
+              tstruncova@gmail.com
             </p>
             <a
-              href="mailto:example@example.com"
+              href="mailto:tstruncova@gmail.com"
               class="bg-stone-200 rounded-full p-2 text-center mt-10 cursor-pointer hover:bg-stone-100 duration-500 transition-all"
               >Kontaktujte nás</a
             >
@@ -312,49 +266,106 @@
         </div>
 
         <!-- Contact form -->
-        <div
-          class="flex flex-col gap-6 order-2 w-full md:w-full lg:w-full xl:w-1/2 p-4 border border-stone-500 rounded-3xl"
+        <form
+          action="https://formspree.io/f/xyzlyywo"
+          method="POST"
+          class="flex flex-col gap-6 order-2 w-full md:w-full lg:w-7/12 xl:w-1/2 p-4 border border-stone-500 rounded-3xl"
         >
-          <!-- Form inputs here -->
-          <input
-            type="text"
-            placeholder="Jméno a příjmení / název firmy"
-            class="w-full border border-stone-500 bg-transparent text-black placeholder:text-black rounded-full pl-4 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
-            required
-          />
-          <input
-            type="number"
-            min="0"
-            max="99999999"
-            placeholder="IČO (pokud máte)"
-            class="w-full border border-stone-500 bg-transparent text-black placeholder:text-black rounded-full pl-4 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
-          />
-          <div class="flex gap-2">
+          <!-- Jméno a příjmení / název firmy -->
+          <label class="flex flex-col gap-1">
+            <span class="text-stone-700 font-medium ml-2"
+              >Jméno a&nbsp;příjmení / název firmy
+              <span class="text-red-500">*</span></span
+            >
+            <input
+              type="text"
+              name="jmeno-prijmeni"
+              placeholder="např. Jan Novák"
+              class="w-full border border-stone-500 bg-transparent text-black rounded-full pl-4 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
+              required
+            />
+          </label>
+
+          <!-- IČO -->
+          <label class="flex flex-col gap-1">
+            <span class="text-stone-700 font-medium ml-2"
+              >IČO (pokud máte)</span
+            >
             <input
               type="number"
-              placeholder="Telefonní číslo"
-              class="w-1/3 border border-stone-500 bg-transparent text-black placeholder:text-black rounded-full pl-4 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
+              name="ico"
+              min="0"
+              max="99999999"
+              placeholder="např. 25596641"
+              class="w-full border border-stone-500 bg-transparent text-black rounded-full pl-4 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
             />
-            <input
-              type="email"
-              placeholder="E-mail"
-              class="w-2/3 border border-stone-500 bg-transparent text-black placeholder:text-black rounded-full pl-4 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
-            />
+          </label>
+
+          <!-- Telefonní číslo + E-mail -->
+          <div class="flex flex-wrap gap-2">
+            <label class="flex-1 flex flex-col gap-1 min-w-[140px]">
+              <span class="text-stone-700 font-medium ml-2"
+                >Telefonní číslo <span class="text-red-500">*</span></span
+              >
+              <input
+                type="tel"
+                name="phone-num"
+                placeholder="např. 123 456 789"
+                class="w-full border border-stone-500 bg-transparent text-black rounded-full pl-4 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
+                required
+              />
+            </label>
+
+            <label class="flex-1 flex flex-col gap-1 min-w-[140px]">
+              <span class="text-stone-700 font-medium ml-2"
+                >E-mail <span class="text-red-500">*</span></span
+              >
+              <input
+                type="email"
+                name="e-mail"
+                placeholder="např. novak@gmail.com"
+                class="w-full border border-stone-500 bg-transparent text-black rounded-full pl-4 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-lime-500"
+                required
+              />
+            </label>
           </div>
-          <textarea
-            placeholder="Krátký popis požadované služby"
-            class="w-full border border-stone-500 bg-transparent text-black placeholder:text-black rounded-3xl pl-4 pr-4 py-4 resize-none focus:outline-none focus:ring-2 focus:ring-lime-500"
-          ></textarea>
+
+          <!-- Popis služby -->
+          <label class="flex flex-col gap-1">
+            <span class="text-stone-700 font-medium ml-2"
+              >Krátký popis požadované služby
+              <span class="text-red-500">*</span></span
+            >
+            <textarea
+              name="popis-sluzby"
+              placeholder="Dobrý den, .."
+              class="w-full border border-stone-500 bg-transparent text-black rounded-3xl pl-4 pr-4 py-4 resize-none focus:outline-none focus:ring-2 focus:ring-lime-500"
+              required
+            ></textarea>
+          </label>
+
+          <!-- Submit -->
           <input
             type="submit"
             value="Odeslat"
             class="w-full border border-stone-500 bg-stone-300 text-black rounded-full py-2 hover:bg-stone-500 hover:text-white duration-500 transition-all cursor-pointer"
           />
-        </div>
+
+          <div class="flex flex-col">
+            <p class="self-center text-center text-sm pb-0">
+              Políčka označena <span class="font-bold">*</span> jsou povinná
+            </p>
+
+            <p class="self-center text-center text-sm text-stone-600">
+              Odesláním souhlasíte se zpracováním osobních údajů, viz
+              <a class="text-brand-400 underline" href="GDPR.docx">GDPR</a>
+            </p>
+          </div>
+        </form>
 
         <!-- Pricing -->
         <div
-          class="flex flex-col order-3 w-full xl:w-1/4 p-4 bg-blue-300 rounded-3xl hover:shadow-md hover:shadow-blue-900 transition-all duration-500"
+          class="flex flex-col order-3 w-full xl:w-1/4 lg:w-4/12 p-4 bg-blue-300 rounded-3xl hover:shadow-md hover:shadow-blue-900 transition-all duration-500"
         >
           <div class="flex items-center gap-2">
             <div class="bg-blue-100 p-2 rounded-2xl">
@@ -383,9 +394,10 @@
 
           <p class="text-black pt-2">
             Cena se vždy odvíjí od konkrétních potřeb klienta - množství
-            dokladů, rozsahu služeb a frekvence zpracování.
+            dokladů, rozsahu služeb a&nbsp;frekvence zpracování.
           </p>
 
+          <!-- Inner table -->
           <div class="bg-stone-100 rounded-2xl w-full p-4 mt-4">
             <table class="w-full text-left text-black">
               <tbody>
@@ -396,7 +408,7 @@
                   <td
                     class="font-bold text-blue-900 underline whitespace-nowrap"
                   >
-                    od 5 000 Kč
+                    od 1 200 Kč/měsíc
                   </td>
                 </tr>
                 <tr
@@ -406,7 +418,7 @@
                   <td
                     class="font-bold text-blue-900 underline whitespace-nowrap"
                   >
-                    od 5 000 Kč
+                    od 2 500 Kč/měsíc
                   </td>
                 </tr>
                 <tr
@@ -416,7 +428,7 @@
                   <td
                     class="font-bold text-blue-900 underline whitespace-nowrap"
                   >
-                    od 5 000 Kč
+                    od 1 000 Kč/měsíc
                   </td>
                 </tr>
                 <tr class="hover:bg-blue-300/20 transition">
@@ -424,40 +436,127 @@
                   <td
                     class="font-bold text-blue-900 underline whitespace-nowrap"
                   >
-                    od 5 000 Kč
+                    od 1 500 Kč/měsíc
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
+
+          <p class="p-2">Výše uvedené ceny jsou bez DPH</p>
         </div>
       </div>
     </div>
 
-    <!-- Footer  -->
-    <div
-      class="w-screen flex flex-col flex-wrap items-center text-center bg-gradient-to-b from-stone-200 to-stone-400 p-8 pt-24"
-    >
-      <div>
-        <p>Rychlé odkazy:</p>
-        <a
-          class="underline hover:text-green-600 duration-500 transition-all text-green-800 cursor-pointer"
-          href="#sluzby"
-          >Naše služby</a
-        >
-        <a
-          class="underline hover:text-green-600 duration-500 transition-all text-green-800 cursor-pointer"
-          href="#sluzby"
-          >Ceník</a
-        >
-        <a
-          class="underline hover:text-green-600 duration-500 transition-all text-green-800 cursor-pointer"
-          href="#sluzby"
-          >Kontakt</a
-        >
+    <!-- Footer -->
+    <div class="flex flex-col">
+      <div
+        class="w-screen flex flex-nowrap sm:flex-row sm:gap-24 gap-6 pl-14 flex-col text-center p-8 pt-24 justify-center text-gray-700"
+      >
+        <!-- Location -->
+        <div class="flex flex-col items-start">
+          <h1 class="font-semibold text-slate-800 text-lg">TAXPRO s.r.o.</h1>
+          <p class="mt-4">Čižice 173, 332 09</p>
+          <p><span class="font-bold">IČ:</span> 01428021</p>
+          <p><span class="font-bold">DIČ:</span> CZ0142802</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="flex flex-col items-start">
+          <h1 class="font-semibold text-slate-800 text-lg">Kontaktní údaje</h1>
+          <ul class="list-disc list-outside flex flex-col items-start mt-4">
+            <li>
+              <span class="font-bold">Telefon:</span>
+              <a href="tel:+420603560918" class="hover:text-brand underline"
+                >+420 603 560 918</a
+              >
+            </li>
+            <li>
+              <span class="font-bold">Whatsapp:</span>
+              <a
+                href="https://wa.me/420603560918"
+                class="hover:text-brand underline"
+                >+420 603 560 918</a
+              >
+            </li>
+            <li>
+              <span class="font-bold">E-mail:</span>
+              <a
+                href="mailto:tstruncova@gmail.com"
+                class="hover:text-brand underline"
+                >tstruncova@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <p>&copy; 2025 Taxpro s.r.o. - Všechna práva vyhrazena</p>
+      <p
+        class="text-brand text-md text-center px-6 md:px-16 pt-6 text-gray-700"
+      >
+        Domluvte si osobní schůzku nebo nám napište. Rádi s&nbsp;vámi projdeme
+        vaše potřeby a&nbsp;navrhneme optimální řešení.
+      </p>
+
+      <div class="flex flex-col justify-center items-center py-4">
+        <!-- Quick links -->
+        <div class="flex justify-center gap-4 pt-4">
+          <a
+            class="underline hover:text-brand duration-500 transition-all cursor-pointer"
+            href="#sluzby"
+            >Naše služby</a
+          >
+          <a
+            class="underline hover:text-brand duration-500 transition-all cursor-pointer"
+            href="./Obchodní podmínky.pdf"
+            >Obchodní podmínky</a
+          >
+          <a
+            class="underline hover:text-brand duration-500 transition-all cursor-pointer"
+            href="#kontakt"
+            >Kontakt</a
+          >
+        </div>
+
+        <p class="">Člen Komory daňových poradců ČR</p>
+        <a
+          class="underline hover:text-brand duration-500 transition-all cursor-pointer"
+          href="GDPR.docx"
+          >Ochrana osobních údajů (GDPR)</a
+        >
+
+        <p class="pt-4">Spolupracujeme:</p>
+        <div class="flex p-2 gap-8 justify-center">
+          <a href="https://kdpcr.cz"
+            ><img
+              src="https://www.kdpcr.cz/layout/img/theme/logo.png"
+              class="object-contain w-auto h-16"
+          /></a>
+          <div class="flex flex-col items-center">
+            <a href="https://www.stormware.cz"
+              ><img
+                alt=""
+                src="https://www.stormware.cz/image/ostatni/BtnPOHODA.png"
+                class="object-contain w-auto h-16"
+            /></a>
+          </div>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.198315145694!2d13.394578676906194!3d49.65028794465301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ae8cb06e9f115%3A0x416585a01ea7f399!2zxIxpxb5pY2UgMTczLCAzMzIgMDkgxIxpxb5pY2U!5e1!3m2!1scs!2scz!4v1762455941128!5m2!1scs!2scz"
+          width="100%"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="pt-8 max-w-[75vw]"
+        ></iframe>
+
+        <p class="text-brand pt-8">
+          &copy; 2025 Taxpro s.r.o. - Všechna práva vyhrazena
+        </p>
+      </div>
     </div>
   </body>
 </html>
